@@ -1,0 +1,70 @@
+from Banque import Banque
+from Compte import Compte
+from Client import Client
+from Courant import Courant
+from Personne import Personne
+from Compte_epargne import Compte_epargne
+from Controleur import controleur
+from Chef_agence import Chef_agence
+from Guichetier import Guichetier
+from Gestionnaire import Gestionnaire
+from Compte_gre_a_gre import Compte_gre_a_gre
+#Teste du fonctionnement de la classe Banque()
+bank = Banque()
+
+#Grâce à la méthode __str__ on peut faire : 
+print(bank) 
+
+#Teste de la classe Compte
+
+#La création d'un compte ce fait normalement lors de la déclaration d'un Client ( ceci est juste un exemple )
+c = Compte(100,1500)
+print(c)
+#Le gestionnaire à ici pour role de creer, supprimer un compte dans une instance de Banque
+
+g = Gestionnaire("17B463FS","DIEZOUMBE" "dd")
+g.ajoutCompte(bank)
+print(bank)
+g.ajoutCompte(bank)
+g.ajoutCompte(bank)
+print(bank)
+g.supprimeCompte(bank)
+print(bank)
+
+
+cont =  Controleur()
+
+#Petit exemple
+if( cont.verifier( c.solde , 4000) ):
+  print( "Votre solde est supérieur à 4000 FCFA ! \n" )
+else:
+  print( "Votre solde est inférieur à 4000 FCFA ! \n" )
+  #Création d'un Client
+
+client = Client("17A193FS","Ludovic","ludovic02")
+client.verser(40000)
+client.verser(50000)
+print(client) #information sur le client
+buyer.retrait(4000)
+
+print(buyer.bank) #Information sur la banque du client   
+
+c1 = Courant(1,40000)
+c2 = Courant(2,1250)
+
+c1.transfert(c2 , 20000) # On prélève 20000 dans c1 pour envoyer à c2
+print(c1)
+print(c2)
+
+
+p = Personne("18A090FS","LABARAN","CAPRI") 
+
+
+p = Client()
+#Qui  peut être aussi recruté par la banque pour devenir un Controleur par exemple
+p = Controleur()
+
+#La classe Personne se contente de regrouper ensemble les attributs propres aux Guichetier, Controleur et Gestionnaire
+
+
+#...
