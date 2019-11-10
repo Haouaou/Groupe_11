@@ -22,8 +22,8 @@ c = Compte(100,1500)
 print(c)
 #Le gestionnaire à ici pour role de creer, supprimer un compte dans une instance de Banque
 
-g = Gestionnaire("17B463FS","DIEZOUMBE" "dd")
-g.ajoutCompte(bank)
+g = Gestionnaire ("17B463FS", "DIEZOUMBE" "dd")
+g.ajoutCompte (banque)
 print(bank)
 g.ajoutCompte(bank)
 g.ajoutCompte(bank)
@@ -57,9 +57,9 @@ print(c1)
 print(c2)
 
 
-p = Personne("18A090FS","LABARAN","CAPRI") 
-
-
+p = Personne ("18A090FS", "LABN", "CAPRI")
+Un séjour sans faille
+Un séjour sans faille
 p = Client()
 #Qui  peut être aussi recruté par la banque pour devenir un Controleur par exemple
 p = Controleur()
